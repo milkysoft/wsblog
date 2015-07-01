@@ -506,7 +506,7 @@
     }),
     doc:function(blog)
     {
-     return Html.Div0(List.ofArray([Html.H10(List.ofArray([UINextUtils.txt("\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u043d\u043e\u0432\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438")])),Html.P0(List.ofArray([UINextUtils.txt("\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0441\u0442\u0430\u0442\u044c\u0438"),Doc.Input(List.ofArray([Attr.Style("width","100%")]),_______________1["var'title"]())])),Html.P0(List.ofArray([UINextUtils.txt("\u0422\u0435\u043a\u0441\u0442 \u0441\u0442\u0430\u0442\u044c\u0438"),UINextUtils["doc'edit'content'input'area"](_______________1["var'content"]())])),Html.P0(List.ofArray([(UINextUtils.button0("\u0421\u043e\u0437\u0434\u0430\u0442\u044c"))(function()
+     return Html.Div0(List.ofArray([Html.H10(List.ofArray([UINextUtils.txt("\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u043d\u043e\u0432\u043e\u0439 \u0437\u0430\u043f\u0438\u0441\u0438")])),Html.P0(List.ofArray([UINextUtils.txt("\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0441\u0442\u0430\u0442\u044c\u0438"),Doc.Input(List.ofArray([Attr.Style("width","100%")]),_______________1["var'title"]())])),Html.P0(List.ofArray([(UINextUtils.button0("\u0421\u043e\u0437\u0434\u0430\u0442\u044c"))(function()
      {
       ClientBlogData["add'post"](blog,_______________1["var'title"]().get_Value(),_______________1["var'content"]().get_Value());
       return _______________1.reset();
@@ -551,7 +551,7 @@
     {
      var arg10;
      arg10=post.EditedTitle;
-     return Html.LI(List.ofArray([Attr.Create("id","post-"+Global.String(post.Id)+"-article")]),List.ofArray([_______________2["doc'header"](blog,post),_______________2["on'edit"](post,Html.Div0(List.ofArray([Html.P0(List.ofArray([UINextUtils.txt("\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0441\u0442\u0430\u0442\u044c\u0438"),Doc.Input(List.ofArray([Attr.Style("width","100%")]),arg10)])),Html.P0(List.ofArray([UINextUtils.txt("\u0422\u0435\u043a\u0441\u0442 \u0441\u0442\u0430\u0442\u044c\u0438"),UINextUtils["doc'edit'content'input'area"](post.EditedContent)]))])),_______________2["doc'static'content"](post))]));
+     return Html.LI(List.ofArray([Attr.Create("id","post-"+Global.String(post.Id)+"-article")]),List.ofArray([_______________2["doc'header"](blog,post),_______________2["on'edit"](post,Html.Div0(List.ofArray([Html.P0(List.ofArray([UINextUtils.txt("\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0441\u0442\u0430\u0442\u044c\u0438"),Doc.Input(List.ofArray([Attr.Style("width","100%")]),arg10)]))])),_______________2["doc'static'content"](post))]));
     },
     "\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0435 \u0447\u043b\u0435\u043d\u044b":{
      "doc'crud":function(blog,post)
@@ -635,21 +635,6 @@
      {
       return Doc.Button(txt,arg10,arg20);
      };
-    },
-    "doc'edit'content'input'area":function(_var_content)
-    {
-     var doc;
-     doc=Doc.InputArea(List.ofArray([Attr.Class("edit-post-input-area")]),_var_content);
-     return UINextUtils.addViewListener(_var_content.get_View(),function()
-     {
-      jQuery(".edit-post-input-area").each(function()
-      {
-       var copyOfStruct;
-       this.setAttribute("style","height:5px");
-       copyOfStruct=Operators.Max(this.scrollHeight,300);
-       return this.setAttribute("style","height:"+String(copyOfStruct)+"px");
-      });
-     },doc);
     },
     "doc'on'off":function(_var,_doc_yes,_doc_no)
     {

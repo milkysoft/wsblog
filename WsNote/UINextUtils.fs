@@ -34,11 +34,11 @@ module UINextUtils =
                 | false -> doc'no
                 | _ -> doc'yes
 
-    let doc'edit'content'input'area var'content = 
-        Doc.InputArea [ Attr.Class "edit-post-input-area"] var'content
-        |> addViewListener var'content.View (fun x ->
-            JQuery.JQuery.Of(".edit-post-input-area").Each( fun x -> 
-                x.SetAttribute( "style", "height:5px")                                    
-                x.SetAttribute( "style", "height:" + (max x.ScrollHeight 300.).ToString() +  "px")) |> ignore )
+    //let doc'edit'content'input'area var'content = 
+    //    Doc.InputArea [ Attr.Class "edit-post-input-area"] var'content
+    //    |> addViewListener var'content.View (fun x ->
+    //        JQuery.JQuery.Of(".edit-post-input-area").Each( fun x -> 
+    //            x.SetAttribute( "style", "height:5px")                                    
+    //            x.SetAttribute( "style", "height:" + (max x.ScrollHeight 300.).ToString() +  "px")) |> ignore )
 
     

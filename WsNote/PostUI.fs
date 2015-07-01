@@ -54,6 +54,7 @@ module PostUI =
             doc'header blog post
             on'edit post 
                 (Div0[  P0[ txt "Название статьи";  Doc.Input [ Attr.Style "width" "100%" ]  post.EditedTitle ]
-                        P0[ txt "Текст статьи";     doc'edit'content'input'area post.EditedContent] ] )
+                        //P0[ txt "Текст статьи";     doc'edit'content'input'area post.EditedContent]
+                        ] )
                 (doc'static'content post)]
         

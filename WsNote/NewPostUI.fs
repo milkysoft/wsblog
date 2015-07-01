@@ -29,7 +29,7 @@ module NewPostUI =
         Div0[  
             H10 [txt "Создание новой записи"]
             P0[ txt "Название статьи";  Doc.Input [ Attr.Style "width" "100%" ]  var'title ]
-            P0[ txt "Текст статьи";     doc'edit'content'input'area var'content] 
+            //P0[ txt "Текст статьи";     doc'edit'content'input'area var'content] 
             P0[ button0 "Создать" (fun () -> 
                     ClientBlogData.add'post blog var'title.Value var'content.Value 
                     reset() )
